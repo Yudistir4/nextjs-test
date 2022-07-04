@@ -1,2 +1,2 @@
-// export const rootPath = "https://campus-connect-project.herokuapp.com/";
-export const rootPath = "http://localhost:3000/";
+export const rootPath = "https://test-my-be.herokuapp.com/";
+// export const rootPath = "http://localhost:5000/";

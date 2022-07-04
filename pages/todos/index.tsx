@@ -45,7 +45,7 @@ const Todos = ({ docs, totalPages }: Tasks) => {
     console.log(res.data);
 
     // console.log(input);
-    setData((prev) => [res.data.task, ...prev]);
+    setData((prev) => [res.data, ...prev]);
     setInput("");
     setIsSubmit(false);
   };
@@ -130,8 +130,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       ...res.data,
-      //   docs: [{ id: "1", task: "asik" }],
-      //   totalPages: 2,
+      // docs: [{ id: "1", task: "asik" }],
+      // totalPages: 2,
     },
   };
 };
